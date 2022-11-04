@@ -48,13 +48,12 @@ const scores = {
     Ben: 1
 }
 
-scores["Anna"] += 2;
-scores["John"] += 3;
-scores["Ben"] += 5;
+scores[`Anna`] += 2;
+scores[`John`] += 3;
+scores[`Ben`] += 5;
 
 let scoresShow = document.querySelector('#scoresShow');
-scoresShow.innerHTML = scores;
-
+scoresShow.innerHTML = JSON.stringify(scores); // лайфхак для виведення об'єкта у html !!!!
 console.log(scores);
 
 // #2 Витягнути елемент з масиву
